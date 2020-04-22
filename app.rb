@@ -9,9 +9,9 @@ class Application < Sinatra::Base
   get '/greet' do
 
   end
-  
+
   post '/greet' do
     @user_name = params[:user_name]
-    erb :greet
+    "Hi #{@user_name}, nice to meet you!"
   end
 end
