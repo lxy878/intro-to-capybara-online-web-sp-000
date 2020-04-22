@@ -7,7 +7,7 @@ class Application < Sinatra::Base
   end
 
   post '/greet' do
-    @name = params[:name]
+    @name = params[:user_name]
     erb :greet
   end
 end
